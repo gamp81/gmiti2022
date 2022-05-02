@@ -20,7 +20,7 @@
         <!--Theme Responsive css-->
         <link rel="stylesheet" href="/css/responsive.css" />
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-
+        <link href="{{ mix('css/app.css') }}" rel="stylesheet">
         @yield('estilos')
         <script src="/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
     </head>
@@ -72,11 +72,30 @@
                     <ul class="nav navbar-nav navbar-right">
                         <li class="active"><a href="/">Home</a></li>
                         <li><a href="/about">Nosotros</a></li>
-                        <li><a href="/services">Servicios</a></li>
+                        <li><a href="/servicios">Servicios</a></li>
                         
                         <li><a href="/blog">Blog</a></li>
                         <li><a href="/contactanos">Contacto</a></li>
                         <!-- <li class="login"><a href="#">Sign In</a></li> -->
+                        @guest
+                        <li> <a href="{{ route('login') }}">{{ __('Login') }}</a></li>
+                            <!-- @if (Route::has('register'))
+                                <a class="no-underline hover:underline" href="{{ route('register') }}">{{ __('Register') }}</a>
+                            @endif -->
+                         @else
+                         <li> <a class="no-underline hover:underline" href="/favorites">Favorites</a></li>
+
+
+                         <!-- <li>{{ Auth::user()->name }}</li> -->
+
+                        <li><a href="{{ route('logout') }}"
+                           class="no-underline hover:underline"
+                           onclick="event.preventDefault();
+                                document.getElementById('logout-form').submit();">{{ __('Logout') }}</a></li>
+                        <form id="logout-form" action="{{ route('logout') }}" method="POST" class="hidden">
+                            {{ csrf_field() }}
+                        </form>
+                    @endguest
                     </ul>
 
                 </div><!-- /.navbar-collapse -->

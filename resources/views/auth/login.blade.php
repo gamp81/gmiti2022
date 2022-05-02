@@ -1,5 +1,4 @@
-@extends('layouts.app')
-
+@extends('layout')
 @section('content')
 <main class="sm:container sm:mx-auto sm:max-w-lg sm:mt-10">
     <div class="flex">

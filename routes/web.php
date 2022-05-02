@@ -15,8 +15,8 @@ use App\Http\Controllers\PostsController;
 |
 */
 
-Route::get('/', [PagesController::class, 'index']);
-
+// Route::get('/', [PagesController::class, 'index']);
+Route::get('/', [PagesController::class, 'home']);
 Route::resource('/blog', PostsController::class);
 
 Auth::routes();
@@ -26,12 +26,27 @@ Route::get('/about',function (){
     return view('about');
 } );
 Route::get('/servicios',function (){
-    return view('services');
+    return view('servicios');
+} );
+Route::get('/contactanos',function (){
+    return view('contacto');
 } );
 Route::get('/aboutus',function (){
     return view('aboutus');
 } );
 
+Route::post('mensaje',function(){
+    //correo
+    $data= request()->all();
+    Mail::send ('emails.mensaje',$data,function($message) use ($data){
+        $message->from($data['email'],$data['name'])
+            ->to('info@gmiti.com', 'Info')
+            ->subject($data['name']);
+    });
+
+
+    return back()->with('flash','Tu mensaje ha sido recibido !');
+})->name('mensaje');
 
 Route::post('/blog/favorite/{slug}/{user_id}', [App\Http\Controllers\PostsController::class, 'favorite']);
 
