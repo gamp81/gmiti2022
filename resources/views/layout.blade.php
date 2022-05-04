@@ -23,6 +23,7 @@
         <link href="{{ mix('css/app.css') }}" rel="stylesheet">
         @yield('estilos')
         <script src="/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+        <script src="//cdn.ckeditor.com/4.18.0/standard/ckeditor.js"></script>
     </head>
     <body>
       

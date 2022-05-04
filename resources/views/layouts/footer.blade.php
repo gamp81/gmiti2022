@@ -100,8 +100,8 @@
         <div id="fh5co-footer" role="contentinfo" data-section="footer">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-6 to-animate">
-                        <h3 class="section-title">Acerca de nosotros</h3>
+                    <div class="text-2xl text-white col-md-6 to-animate">
+                        <h3 class="text-2xl text-white font-bold">Acerca de nosotros</h3>
                         <p>Somos una empresa muy comprometida con nuestros clientes, nuestra misión es crear herramientas tecnológicas que fortalezcan el negocio y agiliten los procesos complejos de nuestros clientes</p>
                     </div>
 

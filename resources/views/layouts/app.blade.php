@@ -32,7 +32,7 @@
 
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>
-
+    <script src="//cdn.ckeditor.com/4.18.0/standard/ckeditor.js"></script>
     <!-- Styles -->
     <link href="{{ mix('css/app.css') }}" rel="stylesheet">
 </head>
@@ -81,5 +81,11 @@
             @include('layouts.footer')
         </div>
     </div>
+    <script src="/js/vendor/jquery-1.11.2.min.js"></script>
+        <script src="/js/vendor/bootstrap.min.js"></script>
+
+        <script src="/js/plugins.js"></script>
+        <script src="/js/modernizr.js"></script>
+        <script src="/js/main.js"></script>
 </body>
 </html>

@@ -10,7 +10,7 @@
                                 <div class="home-content">
 
                                     <h1>Le brindamos soluciones informáticas óptimas para su empresa, negocio o domicilio </h1>
-                                    <h4 style="text-align:center; color:white; ">Nuestro equipo esta capacitado para ayudar a todos nuestros clientes y futuros clientes en sus proyectos</h4>
+                                    <h4 style="text-align:center; color:white; "class="text-2xl text-white font-bold">Nuestro equipo esta capacitado para ayudar a todos nuestros clientes y futuros clientes en sus proyectos</h4>
                                 </div>
                             </div>
                         </div>
@@ -21,14 +21,15 @@
 	
         <!-- Sections -->
         <section id="fh5co-pricing" data-section="pricing">
-		<div class="fh5co-pricing">
+			<div class="bg-black fh5co-pricing">
+			<!-- <div class="text-2xl bg-black-500">	 -->
 			<div class="container">
 				<div class="row">
 					<div class="col-md-12 section-heading text-center">
-						<h2 class="to-animate">SERVICIOS INFORMATICOS</h2>
+						<h2 class="to-animate text-2xl text-white font-bold">SERVICIOS INFORMATICOS</h2>
 					<div class="row">
-							<div class="col-md-8 col-md-offset-2 subtext">
-								<h4 class="to-animate">Los servicios que ofrecemos son para toda empresa, negocio o domicilio, contamos con el personal calificado siempre en linea para una pronta respuesta.</h3>
+							<div class="col-md-8 col-md-offset-2 subtext py-4">
+								<h4 class="to-animate text-1xl text-white">Los servicios que ofrecemos son para toda empresa, negocio o domicilio, contamos con el personal calificado siempre en linea para una pronta respuesta.</h3>
 							</div>
 						</div>
 					</div>
@@ -38,11 +39,12 @@
 					<div class="pricing col-md-12">
 						<div class="col-md-4">
 							<div class="price-box to-animate-2">
-								<h2 style="text-align:center;">Diseño Web</h2>
+								<h2 style="text-align:center;" class="text-2xl text-black font-bold ">Diseño Web</h2>
 							
 								<div class="price"><i class="fas fa-laptop icon-lg "style="color:black; font-size: 80px;"></i></div>
-								<div class="mt">
-									<p>Podemos crear landing pages, sitios corporativos y soluciones de comercio electrónico. todos nuestros desarrollos son personalizados, se adaptan a pantallas de computadoras y celulares conectados a internet.</p>
+								<div class="text-1xl text-black text-left py-4 ">
+									<p>Podemos crear landing pages, sitios corporativos y soluciones de comercio electrónico. 
+										todos nuestros desarrollos son personalizados, se adaptan a pantallas de computadoras y celulares conectados a internet.</p>
 									<ul class="list-nav">
 										<li>Estrategica, adaptativa, comunicativa</li>
 										
@@ -57,12 +59,13 @@
 
 						<div class="col-md-4">
 							<div class="price-box to-animate-2 popular">
-							<h2 style="text-align:center;">Soporte Tecnico </h2>
+							<h2 style="text-align:center;" class="text-2xl text-black font-bold ">Soporte Tecnico </h2>
 								<div class="price"><i class="icon icon-group icon-lg" style="color:black; font-size: 80px;" ></i></div>
-								<div class="mt">
+								<div class="text-1xl text-black text-left py-6 ">
 								
-									<p>Consultoria IT, mantenimiento preventivo y correctivos de Hardware, Ofrecemos servicios de mantenimiento informático</p>
-									<ul class="list-nav">
+									<p>Consultoria IT, mantenimiento preventivo y correctivos de Hardware, Ofrecemos servicios de 
+										mantenimiento informático</p>
+									<ul class="list-disc list-inside text-left">
 										<li>Soporte remoto o presencial</li>
 										<li>Instalaciones</li>
 										<li>Actualizaciones</li>
@@ -75,9 +78,9 @@
 						</div>
                         <div class="col-md-4">
 							<div class="price-box to-animate-2">
-							<h2 style="text-align:center;">Seguridad de la información</h2>
+							<h2 style="text-align:center;" class="text-2xl text-black font-bold ">Seguridad de la información</h2>
 								<div class="price"><i class="icon icon-cloud-upload icon-lg" style="color:black; font-size: 80px;" ></i></div>
-								<div class="mt">
+								<div class="text-1xl text-black text-left py-6 ">
 									<p>La información el activo más importante de una organización requiere especial atención en su cuidado y/o protección.<br>
                                 	Copias de seguridad, Firewall, etc.
 									</p>
@@ -95,9 +98,9 @@
 					<div class="pricing col-md-12">
 						<div class="col-md-4">
 							<div class="price-box to-animate-2">
-							<h2 style="text-align:center;">Telefonía IP</h2>
+							<h2 style="text-align:center;" class="text-2xl text-black font-bold ">Telefonía IP</h2>
 								<div class="price"><i class="icon icon-phone icon-lg" style="color:black; font-size: 80px;"></i></div>
-								<div class="mt">
+								<div class="text-1xl text-black text-left py-6 ">
 									<p> Diseñamos su red telefonica convergente,
 									   proyecta sobre tus clientes una imagen más profesional con la tecnologia más avanzada del mercado centrales IP.</p>
 									
@@ -110,9 +113,9 @@
 
 						<div class="col-md-4">
 							<div class="price-box to-animate-2 ">
-							<h2 style="text-align:center;">Seguridad Electrónica </h2>
+							<h2 style="text-align:center;" class="text-2xl text-black font-bold ">Seguridad Electrónica </h2>
 								<div class="price"><i class="icon icon-facetime-video icon-lg" style="color:black; font-size: 80px;"></i></div>
-								<div class="mt">
+								<div class="text-1xl text-black text-left py-6 ">
 									<p>Acompañamos el diseño, instalación, mantenimientos correctivos y preventivos  
 										de sistemas de seguridad electrónica en diferentes lineas de negocio.
 									</p>
@@ -124,9 +127,9 @@
 						</div>
 						<div class="col-md-4">
 							<div class="price-box to-animate-2 ">
-							<h2 style="text-align:center;">Desarrollo Software </h2>
+							<h2 style="text-align:center;" class="text-2xl text-black font-bold ">Desarrollo Software </h2>
 								<div class="price"><i class="fas fa-code icon-lg" style="color:black; font-size: 80px;"></i></div>
-								<div class="mt">
+								<div class="text-1xl text-black text-left py-6 ">
 								
 									<p>El desarrollo de software a medida permite que su empresa cuente con herramientas de última tecnología a de acuerdo a sus necesidades.</p>
 									
@@ -152,18 +155,19 @@
 	</section> 
 
 	<section class="features sections" style=" background:url(../images/computingcity.jpg) no-repeat center center;">
-					<div class="auto-container">
+					<div class="container auto-container">
 						<div class="row clearfix">
 							<!-- Heading Column -->
-							<div class="heading-column col-lg-8 col-md-12 col-sm-12">
-								<div class="inner-column">
-									<h2 style="text-align:center; color:white;">Mantenimientos Informáticos a medida<br> Las mejores soluciones en IT</h2>
+							<div class=" heading-column col-lg-10 col-md-12 col-sm-12">
+								<div class="inner-column ">
+									<!-- <h2 style="text-align:center; color:black; font-size: 40px;">Mantenimientos Informáticos a medida<br> Las mejores soluciones en IT</h2> -->
+									<h2 class="text-5xl text-white text-align-center">Mantenimientos Informáticos a medida<br> Las mejores soluciones en IT</h2>
 								</div>
 							</div>
 							<!-- Button Column -->
-							<div class="button-column col-lg-4 col-md-12 col-sm-12">
+							<div class="button-column col-lg-2 col-md-12 col-sm-12">
 								<div class="inner-column">
-									<a href="/contactanos" class="btn btn-danger"><span class="txt">Solicitar Información</span></a>
+									<a href="/contactanos" class="text-2xl bg-red-500 hover:bg-red-700 text-white font-bold btn"><span class="text-white-700">Solicitar Información</span></a>
 								</div>
 							</div>
 						</div>
