@@ -40,7 +40,7 @@
             <div class="container mx-auto flex justify-between items-center px-6">
                 <div>
                     <a href="{{ url('/') }}" class="text-lg font-semibold text-gray-100 no-underline">
-                        <i class="fas fa-shield icon-lg" style="color:white; font-size: 60px;" >GMITI</i>
+                        <i class="fas fa-shield icon-lg" style="color:white; font-size: 50px;" >GMITI</i>
                         Services
                         {{-- {{ config('app.name', 'GMITI') }} Services --}}
                     </a>

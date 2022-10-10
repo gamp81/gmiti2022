@@ -4,18 +4,21 @@
 <section id="contact" class="contact sections lightbg">
             <div class="container">
                 <div class="row">
-                    @if(session()->has('flash'))
+                    @if (Session::has ('message'))
+                    <p class="alert alert-success "><strong>{{Session::get('message')}}</strong></p>
+                    @endif
+                    {{-- @if(session()->has('flash'))
                     <div class="alert alert-success alert-dismissible fade show" role="alert">
                             <strong>{{session()->get('flash')}}</strong> mensaje
                             <button type="button" class="close" data-dismiss="alert" aria-label="Close">
                                 <span aria-hidden="true">&times;</span>
                             </button>
                     </div>
-                    @endif
-                    <div class="main_contact whitebackground">
+                    @endif --}}
+                    <div class="main_contact whitebackground text-3xl text-black">
                         <div class="head_title text-center">
-                            <h2>Comentanos tus necesidades</h2>
-							<p>Envia un mail nuestos acesores responderan en un breve tiempo</p>
+                            <h1 class="font-bold">Comentanos tus necesidades</h1>
+							<p>Envia un mail nuestros acesores responderan en un breve tiempo</p>
                         </div>
                         <div class="contact_content">
                             <div class="col-md-6">
@@ -45,7 +48,11 @@
                             <div class="col-md-6">
                                 <div class="single_right_contact">
                                     <p>Puedes enviarnos tu número telefónico y horario si desea que lo contacten por ese medio. </p>
-
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <p>Tambien puedes escribirnos al WhatApps haciendo clic en el boton verde </p>
                                    
 
                                 </div>
