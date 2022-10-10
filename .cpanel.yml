@@ -1,0 +1,17 @@
+---
+deployment:
+  tasks:
+    - export REPOPATH=/home/gmituqtd/repositories/gmiti2022
+    - export DEPLOYPATH=/home/gmituqtd/public_html/gmiti2022
+    - /bin/cp -ru ./ $DEPLOYPATH/
+    - /bin/chmod 755 $DEPLOYPATH/
+    - cd $DEPLOYPATH/
+    # Cambiar a directorio de aplicación para operaciones específicas
+    - /bin/rm -rf .git
+    # Autoloader Optimization
+    - /opt/cpanel/composer/bin/composer install --no-interaction --prefer-dist --optimize-autoloader --no-dev
+    # Creación archivo de variables de entorno en deploy inicial.
+    - /usr/local/bin/php -r "file_exists('.env') || copy('.env.example', '.env');"
+    - /usr/local/bin/php artisan key:generate --ansi
+    # Volver al directorio del repositorioa   
+    - cd $REPOPATH
