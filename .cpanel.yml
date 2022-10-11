@@ -13,5 +13,4 @@ deployment:
     # Creación archivo de variables de entorno en deploy inicial.
     - /usr/local/bin/php -r "file_exists('.env') || copy('.env.example', '.env');"
     - /usr/local/bin/php artisan key:generate --ansi
-    # Volver al directorio del repositorioa   
     - cd $REPOPATH
