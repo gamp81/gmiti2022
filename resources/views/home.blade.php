@@ -156,7 +156,7 @@
 		</div>
 	</section> 
 
-	{{-- <section id = "mant" class="mant features sections" style=" background:url(../images/computingcity.jpg) no-repeat center center;"> --}}
+	{{-- <section id = "mant" class="mant features sections" style=" background:url(../images/computingcity.webp) no-repeat center center;"> --}}
 	<section id = "mant" class="mant">
 					<div class="container auto-container">
 						<div class="row clearfix">
