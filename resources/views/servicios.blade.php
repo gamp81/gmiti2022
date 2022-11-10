@@ -4,10 +4,13 @@
 <section id="service" class="service2 sections lightbg">
 
             <div class="container">
+               
+
                 <div class="row">
-                    <div class="main_service2">
+                   
+                    <div class="main_service2 ">
                         <div class="head_title text-center">
-                            <h2>SERVICIOS INFORMATICOS</h2>
+                            <h4 style="text-align:center;  "class="text-2xl text-black font-bold">SERVICIOS INFORMATICOS</h4>
                             <p>Los servicios que ofrecemos son para toda empresa, negocio o domicilio, contamos con el personal calificado siempre en linea para una pronta respuesta.</p>
                         </div>
 

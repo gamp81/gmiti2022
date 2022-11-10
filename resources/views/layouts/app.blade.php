@@ -5,9 +5,16 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <!-- Favicon -->
         <link rel="shortcut icon" href="images/gmiti.ico">
-        <title>GMITI Soluciones</title>
-        <!-- <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>GMITI Soluciones Informaticas</title>
+        <meta name="language" content="spanish">
+        <meta name="copyright" content="GMITI">
+        <meta name="author" content="Moncada G">
+        <meta name="audience" content="all">
+        <meta name="description" content="Soluciones informaticas, sistema de facturacion , sistema de laboratorios clinicos">
+        <meta name="robots" content="index,all,follow">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1 ">
+        
+        
         <link rel="apple-touch-icon" href="apple-touch-icon.png"> -->
         <link rel="stylesheet" href="/css/bootstrap.min.css">
         {{-- <link rel="stylesheet" href="css/font-awesome.min.css" rel="stylesheet">  --}}
@@ -48,6 +55,7 @@
                 <nav class="space-x-4 text-gray-300 text-lg text-2xl">
                     <a class="no-underline hover:underline" href="/">Inicio</a>
                     <a class="no-underline hover:underline" href="/servicios">Servicios</a>
+                    <a class="no-underline hover:underline" href="/productos">Productos</a>
                     <a class="no-underline hover:underline" href="/about">Nosotros</a>
                     <a class="no-underline hover:underline" href="/blog">Blog</a>
                     @guest

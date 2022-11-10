@@ -31,9 +31,13 @@ Route::get('/servicios',function (){
 Route::get('/contactanos',function (){
     return view('contacto');
 } );
-Route::get('/aboutus',function (){
-    return view('aboutus');
+Route::get('/productos',function (){
+    return view('productos');
 } );
+Route::get('/syslab',function (){
+    return view('syslab.index');
+} );
+
 Route::post('/mensaje', [App\Http\Controllers\PagesController::class, 'enviomail'])->name('mensaje');
 // Route::post('mensaje',function(){
 //     //correo
