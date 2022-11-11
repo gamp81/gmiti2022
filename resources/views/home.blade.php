@@ -161,14 +161,14 @@
 					<div class="container auto-container">
 						<div class="row clearfix">
 							<!-- Heading Column -->
-							<div class=" heading-column col-lg-10 col-md-12 col-sm-12">
+							<div class=" heading-column col-lg-9 col-md-12 col-sm-12">
 								<div class="inner-column ">
 									<!-- <h2 style="text-align:center; color:black; font-size: 40px;">Mantenimientos Informáticos a medida<br> Las mejores soluciones en IT</h2> -->
 									<h2 class="text-5xl text-white font-bold text-align-center">Mantenimientos Informáticos a medida<br> Las mejores soluciones en IT</h2>
 								</div>
 							</div>
 							<!-- Button Column -->
-							<div class="button-column col-lg-2 col-md-12 col-sm-12">
+							<div class="button-column col-lg-3 col-md-12 col-sm-12">
 								<div class="inner-column">
 									<a href="/contactanos" class="text-2xl bg-red-500 hover:bg-red-700 text-white font-bold btn"><span class="text-white-700">Solicitar Información</span></a>
 								</div>
