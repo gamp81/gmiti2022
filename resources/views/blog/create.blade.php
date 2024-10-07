@@ -33,15 +33,18 @@
             name="title"
             placeholder="Title..."
             class="bg-transparent block border-b-2 w-full h-20 text-6xl outline-none">
-
-        <textarea 
+            <div class="form-group">
+                <label> Description </label>
+                    <textarea class="py-20 bg-transparent block border-b-2 w-full h-60 text-xl outline-none" id="content" placeholder="Enter the Description" rows="15" name="description"></textarea>
+            </div>
+        <!-- <textarea 
             name="description"
             placeholder="Description..."
             class="py-20 bg-transparent block border-b-2 w-full h-60 text-xl outline-none"></textarea>
             
                 <script>
                         CKEDITOR.replace( 'description' );
-                </script>
+                </script> -->
         <div class="bg-grey-lighter pt-15">
             <label class="w-44 flex flex-col items-center px-2 py-3 bg-white-rounded-lg shadow-lg tracking-wide uppercase border border-blue cursor-pointer">
                 <span class="mt-2 text-base leading-normal">
@@ -61,5 +64,12 @@
         </button>
     </form>
 </div>
-
+@endsection
+@section('javascript')
+<script>
+            ClassicEditor.create( document.querySelector( '#content' ) )
+                .catch( error => {
+                    console.error( error );
+                } );
+        </script>
 @endsection

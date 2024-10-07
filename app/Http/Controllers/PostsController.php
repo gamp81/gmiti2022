@@ -74,8 +74,14 @@ class PostsController extends Controller
      */
     public function show($slug)
     {
-        return view('blog.show')
-            ->with('post', Post::where('slug', $slug)->first());
+        $post = Post::where('slug', $slug)->first();
+
+        $post->increment("read_count");
+
+        return view('blog.show', compact('post'));
+        
+        // return view('blog.show')
+        //     ->with('post', Post::where('slug', $slug)->first());
     }
 
     /**
