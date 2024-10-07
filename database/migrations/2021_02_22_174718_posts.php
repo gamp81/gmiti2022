@@ -19,6 +19,7 @@ class Posts extends Migration
             $table->string('title');
             $table->longText('description');
             $table->string('image_path');
+            $table->integer('read_count')->default(0)->comment('numero de lectura');
             $table->timestamps();
             $table->unsignedBigInteger('user_id');
             $table->foreign('user_id')->references('id')->on('users');
