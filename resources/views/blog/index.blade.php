@@ -46,10 +46,11 @@
              </p>
 
             <div class="py-6">
-
+                
                 <a href="/blog/{{ $post->slug }}" class="uppercase bg-blue-500 text-gray-100 text-lg font-extrabold py-4 px-8 rounded-3xl">
                     Seguir leyendo
                 </a>
+               
                 @if (Auth::check())
                     @if(Auth::user()->isFavorited($post))
                         <form class="inline-block" method="post" action="{{ url('blog/favorite', ['slug' => $post->slug, 'user_id'=>Auth::user()->id] ) }}"
@@ -70,7 +71,9 @@
                     @endif
                 @endif
             </div>
-
+            <span>
+                        <i class="glyphicon glyphicon-eye-open"></i> {{ $post->read_count }} views
+            </span>
             @if (isset(Auth::user()->id) && Auth::user()->id == $post->user_id)
                 <span class="float-right">
                     <a
@@ -98,6 +101,7 @@
             @endif
         </div>
     </div>
+   
 @endforeach
 
 @endsection

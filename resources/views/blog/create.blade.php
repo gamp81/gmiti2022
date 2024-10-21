@@ -71,5 +71,7 @@
                 .catch( error => {
                     console.error( error );
                 } );
-        </script>
+</script>
+
+
 @endsection
