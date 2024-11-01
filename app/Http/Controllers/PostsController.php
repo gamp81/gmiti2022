@@ -50,10 +50,11 @@ class PostsController extends Controller
             'image' => 'required|mimes:jpg,png,jpeg|max:5048'
         ]);
 
-        $newImageName = uniqid() . '-' . $request->title . '.' . $request->image->extension();
+        // $newImageName = uniqid() . '-' . $request->title . '.' . $request->image->extension();
 
-        $request->image->move(public_path('/images'), $newImageName);
-
+        //$request->image->move(public_path('/images'), $newImageName);
+        $newImageName=$request->image->store('public');
+        //return $rutalogo;
         Post::create([
             'title' => $request->input('title'),
             'description' => $request->input('description'),
