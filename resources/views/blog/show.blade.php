@@ -21,7 +21,7 @@
         
         <!-- {{ url('assets/images/logo.jpg') }} -->
        
-        <img class="img-fluid rounded-circle text-center" src="{{ asset('storage/' . $post->image_path) }}" alt="Imagen de {{ $post->title }}">
+        <img class="img-fluid rounded-circle text-center" src="{{ asset($post->image_path) }}" alt="Imagen de {{ $post->title }}">
     </p>
     <div class="flex border-gray-200">
         <!-- <div class="w-4/5 "> -->
