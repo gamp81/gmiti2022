@@ -47,13 +47,16 @@ class PostsController extends Controller
         $request->validate([
             'title' => 'required',
             'description' => 'required',
-            'image' => 'required|mimes:jpg,png,jpeg|max:5048'
+            'image' => 'required'
+            // 'image' => 'required|mimes:jpg,png,jpeg|max:5048'
         ]);
-
-        $newImageName = uniqid() . '-' . $request->title . '.' . $request->image->extension();
-        $request->image->move(public_path('/storage'), $newImageName);
-        //$request->image->move(public_path('/images'), $newImageName);
-        //$newImageName=$request->image->store('public');
+        if ($request->hasFile('image')) {
+            $newImageName=$request->file('image')->store('public');
+           // return $newImageName;
+        }
+        // $newImageName = uniqid() . '-' . $request->title . '.' . $request->image->extension();
+        // $request->image->move(public_path('/storage'), $newImageName);
+        
         //return $rutalogo;
         Post::create([
             'title' => $request->input('title'),
