@@ -22,11 +22,12 @@
         <!-- <link rel="stylesheet" href="/css/plugins.css" />
         <link rel="stylesheet" href="/css/roboto-webfont.css" /> -->
         <!--Theme custom css -->
+      
         <link rel="stylesheet" href="/css/style.css">
         <!--Theme Responsive css-->
-        {{-- <link rel="stylesheet" href="/css/responsive.css" /> --}}
+        <link href="{{ mix('css/app.css') }}" rel="stylesheet">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-        {{-- <link href="{{ mix('css/app.css') }}" rel="stylesheet"> --}}
+     
         @yield('estilos')
         <script src="/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
         <meta charset="utf-8">
@@ -40,49 +41,49 @@
     {{-- CKEditor CDN --}}
         <script src="https://cdn.ckeditor.com/ckeditor5/23.0.0/classic/ckeditor.js"></script>
     <!-- Styles -->
-    <link href="{{ mix('css/app.css') }}" rel="stylesheet">
+   
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@3.4.1/dist/tailwind.min.css" rel="stylesheet">
 </head>
 <body class="bg-gray-100 h-screen antialiased leading-none font-sans">
     <div id="app">
-        <header class="bg-gray-800 py-6">
+    <header class="bg-gray-800 py-6">
            
-            <div class="container mx-auto flex justify-between items-center px-6">
-                <div>
-                    <a href="{{ url('/') }}" class="text-lg font-semibold text-gray-100 no-underline">
-                        <i class="fas fa-shield icon-lg" style="color:white; font-size: 50px;" >GMITI</i>
-                        Services
-                        {{-- {{ config('app.name', 'GMITI') }} Services --}}
-                    </a>
-                </div>
-                <nav class="space-x-4 text-gray-300 text-lg text-2xl">
-                    <a class="no-underline hover:underline" href="/">Inicio</a>
-                    <a class="no-underline hover:underline" href="/servicios">Servicios</a>
-                    <a class="no-underline hover:underline" href="/productos">Productos</a>
-                    <a class="no-underline hover:underline" href="/about">Nosotros</a>
-                    <a class="no-underline hover:underline" href="/blog">Blog</a>
-                    @guest
-                        <a class="no-underline hover:underline" href="{{ route('login') }}">{{ __('Login') }}</a>
-                        <!-- @if (Route::has('register'))
-                            <a class="no-underline hover:underline" href="{{ route('register') }}">{{ __('Register') }}</a>
-                        @endif -->
-                    @else
-                        <a class="no-underline hover:underline" href="/favorites">Favorites</a>
+           <div class="container mx-auto flex justify-between items-center px-6">
+               <div>
+                   <a href="{{ url('/') }}" class="text-lg font-semibold text-gray-100 no-underline">
+                       <i class="fas fa-shield icon-lg" style="color:white; font-size: 50px;" >GMITI</i>
+                       Services
+                       {{-- {{ config('app.name', 'GMITI') }} Services --}}
+                   </a>
+               </div>
+               <nav class="space-x-4 text-gray-300 text-lg text-2xl">
+                   <a class="no-underline hover:underline" href="/">Inicio</a>
+                   <a class="no-underline hover:underline" href="/servicios">Servicios</a>
+                   <a class="no-underline hover:underline" href="/productos">Productos</a>
+                   <a class="no-underline hover:underline" href="/about">Nosotros</a>
+                   <a class="no-underline hover:underline" href="/en/blog">Blog</a>
+                   @guest
+                       <a class="no-underline hover:underline" href="{{ route('login') }}">{{ __('Login') }}</a>
+                       <!-- @if (Route::has('register'))
+                           <a class="no-underline hover:underline" href="{{ route('register') }}">{{ __('Register') }}</a>
+                       @endif -->
+                   @else
+                       <a class="no-underline hover:underline" href="/favorites">Favorites</a>
 
 
-                        <span>{{ Auth::user()->name }}</span>
+                       <span>{{ Auth::user()->name }}</span>
 
-                        <a href="{{ route('logout') }}"
-                           class="no-underline hover:underline"
-                           onclick="event.preventDefault();
-                                document.getElementById('logout-form').submit();">{{ __('Logout') }}</a>
-                        <form id="logout-form" action="{{ route('logout') }}" method="POST" class="hidden">
-                            {{ csrf_field() }}
-                        </form>
-                    @endguest
-                </nav>
-            </div>
-        </header>
-
+                       <a href="{{ route('logout') }}"
+                          class="no-underline hover:underline"
+                          onclick="event.preventDefault();
+                               document.getElementById('logout-form').submit();">{{ __('Logout') }}</a>
+                       <form id="logout-form" action="{{ route('logout') }}" method="POST" class="hidden">
+                           {{ csrf_field() }}
+                       </form>
+                   @endguest
+               </nav>
+           </div>
+       </header>
         <div>
             @yield('content')
         </div>
@@ -97,5 +98,10 @@
         <script src="/js/plugins.js"></script>
         <script src="/js/modernizr.js"></script>
         <script src="/js/main.js"></script>
+        <script>
+            document.getElementById('menu-toggle').addEventListener('click', function() {
+            document.getElementById('nav-links').classList.toggle('active');
+            });
+        </script>
 </body>
 </html>
