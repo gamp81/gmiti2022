@@ -11,6 +11,10 @@ body {
     font-weight: 300;
 }
 
+.header{
+    background-color:#000;
+    color:rgba(243, 241, 241, 0.993);
+}
 /*
 Section
 */

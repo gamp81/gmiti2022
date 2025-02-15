@@ -58,3 +58,11 @@ Route::post('/blog/favorite/{slug}/{user_id}', [App\Http\Controllers\PostsContro
 Route::post('/favorite/{slug}/{user_id}', [App\Http\Controllers\PostsController::class, 'unfavorite']);
 
 Route::get('/favorites', [App\Http\Controllers\PostsController::class, 'favorites']);
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
