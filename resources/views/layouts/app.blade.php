@@ -22,7 +22,7 @@
         <!-- <link rel="stylesheet" href="/css/plugins.css" />
         <link rel="stylesheet" href="/css/roboto-webfont.css" /> -->
         <!--Theme custom css -->
-      
+        <link rel="stylesheet" href="/css/estilos.css">
         <link rel="stylesheet" href="/css/style.css">
         <!--Theme Responsive css-->
         <link href="{{ mix('css/app.css') }}" rel="stylesheet">
@@ -57,30 +57,33 @@
                    </a>
                </div>
                <nav class="space-x-4 text-gray-300 text-lg text-2xl">
-                   <a class="no-underline hover:underline" href="/">Inicio</a>
-                   <a class="no-underline hover:underline" href="/servicios">Servicios</a>
-                   <a class="no-underline hover:underline" href="/productos">Productos</a>
-                   <a class="no-underline hover:underline" href="/about">Nosotros</a>
-                   <a class="no-underline hover:underline" href="/en/blog">Blog</a>
+               <button class="menu-toggle" id="menu-toggle">&#9776;</button>
+                <ul class="nav-links" id="nav-links">
+                   <li><a class="no-underline hover:underline" href="/">Inicio</a></li>
+                   <li><a class="no-underline hover:underline" href="/servicios">Servicios</a></li>
+                   <li><a class="no-underline hover:underline" href="/productos">Productos</a></li>
+                   <li><a class="no-underline hover:underline" href="/about">Nosotros</a></li>
+                   <li><a class="no-underline hover:underline" href="/en/blog">Blog</a></li>
                    @guest
-                       <a class="no-underline hover:underline" href="{{ route('login') }}">{{ __('Login') }}</a>
+                        <li><a class="no-underline hover:underline" href="{{ route('login') }}">{{ __('Login') }}</a></li>
                        <!-- @if (Route::has('register'))
                            <a class="no-underline hover:underline" href="{{ route('register') }}">{{ __('Register') }}</a>
                        @endif -->
                    @else
-                       <a class="no-underline hover:underline" href="/favorites">Favorites</a>
+                      <li> <a class="no-underline hover:underline" href="/favorites">Favorites</a></li>
 
 
-                       <a class="no-underline hover:underline" href="/blog_admin"><span>{{ Auth::user()->name }}</span></a>
+                      <li><a class="no-underline hover:underline" href="/blog_admin"><span>{{ Auth::user()->name }}</span></a></li>
 
-                       <a href="{{ route('logout') }}"
+                      <li><a href="{{ route('logout') }}"
                           class="no-underline hover:underline"
                           onclick="event.preventDefault();
-                               document.getElementById('logout-form').submit();">{{ __('Logout') }}</a>
+                               document.getElementById('logout-form').submit();">{{ __('Logout') }}</a></li>
                        <form id="logout-form" action="{{ route('logout') }}" method="POST" class="hidden">
                            {{ csrf_field() }}
                        </form>
                    @endguest
+                   </ul>
                </nav>
            </div>
        </header>
