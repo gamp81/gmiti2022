@@ -42,7 +42,7 @@
         <script src="https://cdn.ckeditor.com/ckeditor5/23.0.0/classic/ckeditor.js"></script>
     <!-- Styles -->
    
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@3.4.1/dist/tailwind.min.css" rel="stylesheet">
+    
 </head>
 <body class="bg-gray-100 h-screen antialiased leading-none font-sans">
     <div id="app">
@@ -71,7 +71,7 @@
                        <a class="no-underline hover:underline" href="/favorites">Favorites</a>
 
 
-                       <span>{{ Auth::user()->name }}</span>
+                       <a class="no-underline hover:underline" href="/blog_admin"><span>{{ Auth::user()->name }}</span></a>
 
                        <a href="{{ route('logout') }}"
                           class="no-underline hover:underline"

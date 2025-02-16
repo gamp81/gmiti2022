@@ -19,8 +19,8 @@
             </div>
         @endif
 
-        <div class="">
-            <div class="">
+        <div class="row">
+            <div class="col-md-10">
 
                 @if($category_chain)
                     <div class="container">
@@ -57,8 +57,8 @@
                    <!--  </div> -->
                 </div>
             </div>
-            <div class="col-md-3">
-                <h6>Blog Categories</h6>
+            <div class="col-md-2 py-6">
+                <h6 class="text-gray-700 font-bold text-2xl pb-4">Categorias</h6>
                 <ul class="binshops-cat-hierarchy">
                     @if($categories)
                         @include("binshopsblog::partials._category_partial", [
