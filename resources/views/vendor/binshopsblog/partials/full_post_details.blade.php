@@ -14,9 +14,10 @@
 <h5 class='blog_subtitle'>{{$post->subtitle}}</h5>
 <?=$post->image_tag("medium", false, 'd-block mx-auto'); ?>
 <div class="w-4/5 m-auto text-left">
-    <p class=" text-gray-700 pt-8 pb-10 leading-8 font-light">
-        {!! $post->post_body_output() !!}
-
+    <!-- <p class=" text-gray-700 pt-8 pb-10 leading-8 font-light"> -->
+    <div class="ckeditor-content">    
+    {!! $post->post_body_output() !!}
+    </div>
         {{--@if(config("binshopsblog.use_custom_view_files")  && $post->use_view_file)--}}
         {{--                                // use a custom blade file for the output of those blog post--}}
         {{--   @include("binshopsblog::partials.use_view_file")--}}
@@ -24,7 +25,7 @@
         {{--   {!! $post->post_body !!}        // unsafe, echoing the plain html/js--}}
         {{--   {{ $post->post_body }}          // for safe escaping --}}
         {{--@endif--}}
-    </p>
+   <!--  </p> -->
     <p class="py-5">Posted <strong>{{$post->post->posted_at->diffForHumans()}}</strong></p>
         <div class="container mt-4">
                 <h3>Comparte este blogpost!</h3>

@@ -13,5 +13,92 @@
     background-size: cover;
     height: 600px;
 }
+.ckeditor-content h1,
+.ckeditor-content h2,
+.ckeditor-content h3,
+.ckeditor-content p,
+.ckeditor-content ul,
+.ckeditor-content span,
+.ckeditor-content p span,
+.ckeditor-content ol {
+    all: unset; /* Restablece estilos heredados de app.css */
+}
+
+.ckeditor-content {
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.6;
+}
 
 
+
+
+
+.overlay-fluid-block {
+    background-color: rgba(0, 0, 0, 0.15);
+    width: 100%;
+}
+.home-overlay-fluid {
+    background-color: rgba(41, 41, 41, 0.68);
+    width: 80%;
+    margin: auto;
+}
+.overlay-img {
+    background: rgba(0, 0, 0, 0.3);
+    width: 100%;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    color: #ffffff;
+}
+.no-padding {
+    padding: 0 !important;
+}
+.fluid-blocks-col {
+    padding: 70px 40px 0 80px;
+}
+.fluid-blocks-col-right {
+    padding: 70px 80px 0 40px;
+}
+
+/*For Home Section*/
+.home{
+    background:url(../../public/images/computingcity.jpg) no-repeat center center;
+    /* background:url(../images/bg1.jpg) no-repeat center center; */
+    color:#000;
+	background-size:cover;
+	-webkit-background-size:cover;
+	-moz-background-size:cover;
+	-o-background-size:cover;
+	-ms-background-size:cover;
+    
+}
+.home-wrapper{
+    padding:340px 0px;
+    overflow:hidden;
+}
+.home-content h1{
+    font-size:48px;
+    font-weight:700;
+    margin-bottom: 30px;
+    color: #fff;
+}
+.home-content p{
+    margin-bottom: 30px;
+    color: #fff;
+}
+.home-content .home-contact{
+    margin-top: 90px;
+}
+ /* manten */
+  .mant{
+    /* background:url(../images/computingcity.jpg) no-repeat center center; */
+    background:url(../../public/images/bg1.webp) no-repeat center center;
+    color:#000;
+	background-size:cover;
+	-webkit-background-size:cover;
+	-moz-background-size:cover;
+	-o-background-size:cover;
+	-ms-background-size:cover;
+    padding:200px 0px;
+    overflow:hidden;
+}

@@ -15,31 +15,31 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1 ">
         
         
-        {{-- <link rel="apple-touch-icon" href="apple-touch-icon.png">  --}}
-        <link rel="stylesheet" href="/css/bootstrap.min.css">
-        {{-- <link rel="stylesheet" href="css/font-awesome.min.css" rel="stylesheet">  --}}
+    <!--     {{-- <link rel="apple-touch-icon" href="apple-touch-icon.png">  --}} -->
+     <!--    <link rel="stylesheet" href="/css/bootstrap.min.css"> -->
+    <!--     {{-- <link rel="stylesheet" href="css/font-awesome.min.css" rel="stylesheet">  --}} -->
         <!--For Plugins external css-->
         <!-- <link rel="stylesheet" href="/css/plugins.css" />
         <link rel="stylesheet" href="/css/roboto-webfont.css" /> -->
         <!--Theme custom css -->
         <link rel="stylesheet" href="/css/estilos.css">
-        <link rel="stylesheet" href="/css/style.css">
+       <!--  <link rel="stylesheet" href="/css/style.css"> -->
         <!--Theme Responsive css-->
         <link href="{{ mix('css/app.css') }}" rel="stylesheet">
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-     
+       <!--  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous"> -->
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
         @yield('estilos')
-        <script src="/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+       <!--  <script src="/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script> -->
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
  <!-- Scripts -->
-    {{-- <script src="{{ asset('js/app.js') }}" defer></script> --}}
+   <!--  {{-- <script src="{{ asset('js/app.js') }}" defer></script> --}} -->
     <!-- <script src="//cdn.ckeditor.com/4.18.0/standard/ckeditor.js"></script> -->
     {{-- CKEditor CDN --}}
-        <script src="https://cdn.ckeditor.com/ckeditor5/23.0.0/classic/ckeditor.js"></script>
+     <!--    <script src="https://cdn.ckeditor.com/ckeditor5/23.0.0/classic/ckeditor.js"></script> -->
     <!-- Styles -->
    
     
@@ -51,7 +51,9 @@
            <div class="container mx-auto flex justify-between items-center px-6">
                <div>
                    <a href="{{ url('/') }}" class="text-lg font-semibold text-gray-100 no-underline">
-                       <i class="fas fa-shield icon-lg" style="color:white; font-size: 50px;" >GMITI</i>
+                       <i class="fas fa-shield icon-lg" style=" font-size: 40px;" >
+                        GMITI
+                    </i>
                        Services
                        {{-- {{ config('app.name', 'GMITI') }} Services --}}
                    </a>
