@@ -1,10 +1,9 @@
 @extends('layouts.app')
 
 @section('content')
-<section>
-        <div class="container">
-                <div class="row">
-                    <h4 style="text-align:center;  "class="text-2xl text-black font-bold">PRODUCTOS ESTRELLAS</h4>
+	<section>
+        <div class="row">
+                    <h4 style="text-align:center;  "class="text-2xl text-black font-bold py-7">PRODUCTOS ESTRELLAS</h4>
 					<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6 p-6">
 						<div class="bg-white p-6 rounded-lg shadow-md text-center">
 							
@@ -37,9 +36,9 @@
 							
 						</div>
 					</div>
-				</div>
+		</div>
 
                
-            </div>
-        </section><!-- End of Service2 Section -->	
-        @stop
+           
+	</section><!-- End of Service2 Section -->	
+@stop

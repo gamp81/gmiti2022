@@ -2,23 +2,19 @@
 
 @section('content')
 <section id="service" class="service2 sections lightbg">
-
-            <div class="container">
-                              
-                    <div class="main_service2 ">
-                        <div class="head_title text-center py-10">
-                            <h4 style="text-align:center;  "class="text-2xl text-black font-bold">SERVICIOS INFORMATICOS</h4>
-                            <p class="py-5">Los servicios que ofrecemos son para toda empresa, negocio o domicilio, contamos con el personal calificado siempre en linea para una pronta respuesta.</p>
-                        </div>
-
-                        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2">
-                            <div class="bg-white p-6 rounded-lg text-center">
-                                <div class="grid grid-cols-2">
-                                    <div class="my-4 text-black text-6xl mx-auto">
-                                        <img src="/images/voip.png" class="w-42 h-42" />
-                                    </div>
-                                    <div class="text-left py-5">
-                                        <h2 class="text-2xl font-bold text-black">Telefonia IP</h2>
+    <div class="main_service2 ">
+        <div class="head_title text-center py-10">
+            <h4 style="text-align:center;  "class="text-2xl text-black font-bold">SERVICIOS INFORMATICOS</h4>
+            <p class="py-5">Los servicios que ofrecemos son para toda empresa, negocio o domicilio, contamos con el personal calificado siempre en linea para una pronta respuesta.</p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2">
+            <div class="bg-white p-6 rounded-lg text-center">
+                <div class="grid grid-cols-2">
+                    <div class="my-4 text-black text-6xl mx-auto">
+                        <img src="/images/voip.png" class="w-42 h-42" />
+                    </div>
+                    <div class="text-left py-5">
+                        <h2 class="text-2xl font-bold text-black">Telefonia IP</h2>
                                         <p>Proyectos grandes y pequeños, trabajamos con varias marcas muy reconocidas, centrales IP, PBX, Extensiones remotas.</p>
                                     </div>
                                 </div>
@@ -60,6 +56,6 @@
                         </div>
                     </div>
                 
-            </div>
-        </section><!-- End of Service2 Section -->	
+            
+</section><!-- End of Service2 Section -->	
         @stop

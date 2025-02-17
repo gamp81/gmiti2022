@@ -23,10 +23,10 @@
                             <li><i class="fas fa-globe"></i><a href="www.gmiti.com"> www.gmiti.com</a></li>
                         </ul>
                         <h3 class="section-title">Conecta con nosotros</h3>
-                        <ul class="sm:grid grid-cols-3">
-                            <li><a href="https://www.facebook.com/syslabec" class="facebook"><i class="fab fa-facebook"></i></a></li>
-                            <li><a href="https://www.twitter.com/syslabec/" class="twitter"><i class="fab fa-twitter-square"></i></a></li>
-                            <li><a href="https://www.instagram.com/syslabec/" class="github"><i class="fab fa-instagram"></i></a></li> 
+                        <ul class="sm:grid grid-cols-5 py-5">
+                            <li><a href="https://www.facebook.com/syslabec" class="my-4 text-white text-5xl"><i class="fab fa-facebook"></i></a></li>
+                            <li><a href="https://www.twitter.com/syslabec/" class="my-4 text-white text-5xl"><i class="fab fa-twitter-square"></i></a></li>
+                            <li><a href="https://www.instagram.com/syslabec/" class="my-4 text-white text-5xl"><i class="fab fa-instagram"></i></a></li> 
                         </ul>
                     </div>
          </div>
