@@ -1,23 +1,23 @@
 @extends('layouts.app')
 @section('content')
  <!--Home page style--> 
- 	<header id="home" class="home">
-        <div class="">
-			<div class="home-wrapper">
-                <div class="home-content text-center px-14">
-			        <h1>Le brindamos soluciones informáticas óptimas para su empresa, negocio o domicilio </h1>
+ 	<header id="" class="mant " style=" background:url(../images/computingcity.webp) center center; background-size:cover;">
+        <div class="grid grid-cols-1 ">
+			
+                <div  class="px-6">
+			        <h1 class="text-4xl text-gray-800 font-bold py-5 text-center">Le brindamos soluciones informáticas óptimas para su empresa, negocio o domicilio </h1>
                     <h4 style="text-align:center; color:white; "class="text-2xl text-white font-bold">Nuestro equipo esta capacitado para ayudar a todos nuestros clientes y futuros clientes en sus proyectos</h4>
                 </div>
-            </div>
+          
                    
         </div>			
            
     </header>
 	<!-- Sections -->
     <section >
-		<div class="bg-gray-100">
+		<div class="bg-gray-100 py-5">
 				<div class="row">
-					<div class="col-md-12 section-heading text-center">
+					<div class="col-md-12 section-heading text-center" >
 						<h2 class="to-animate text-3xl text-black font-bold">SERVICIOS INFORMATICOS</h2>
 					<div class="row">
 							<div class="col-md-8 col-md-offset-2 subtext py-4">
