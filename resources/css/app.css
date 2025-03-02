@@ -93,3 +93,99 @@
     padding:200px 0px;
     overflow:hidden;
 }
+/* * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ */
+/* body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #1d2a38;
+    padding: 10px 20px;
+} */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.logo span {
+    font-size: 14px;
+    font-weight: normal;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.menu-toggle {
+    display: none;
+    font-size: 24px;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+/* Estilos Responsivos */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        background-color: #1d2a38;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+}
+.ckeditor-content h1,
+.ckeditor-content h2,
+.ckeditor-content h3,
+.ckeditor-content p,
+.ckeditor-content ul,
+.ckeditor-content ol {
+    all: unset; /* Restablece estilos heredados de app.css */
+}
+
+.ckeditor-content {
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    line-height: 2;
+    text-align: justify;
+}
