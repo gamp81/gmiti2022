@@ -22,13 +22,13 @@
         <!-- <link rel="stylesheet" href="/css/plugins.css" />
         <link rel="stylesheet" href="/css/roboto-webfont.css" /> -->
         <!--Theme custom css -->
-      {{--   <link rel="stylesheet" href="/css/estilos.css"> --}}
+        <link rel="stylesheet" href="/css/estilos.css">
        <!--  <link rel="stylesheet" href="/css/style.css"> -->
         <!--Theme Responsive css-->
         <link href="{{ mix('css/app.css') }}" rel="stylesheet">
        <!--  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous"> -->
        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-   
+     <!--    @yield('estilos') -->
        <!--  <script src="/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script> -->
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -100,9 +100,9 @@
     <script src="/js/vendor/jquery-1.11.2.min.js"></script>
         <script src="/js/vendor/bootstrap.min.js"></script>
         @yield('javascript')
-       {{--  <script src="/js/plugins.js"></script>
+        <script src="/js/plugins.js"></script>
         <script src="/js/modernizr.js"></script>
-        <script src="/js/main.js"></script> --}}
+        <script src="/js/main.js"></script>
         <script>
             document.getElementById('menu-toggle').addEventListener('click', function() {
             document.getElementById('nav-links').classList.toggle('active');
