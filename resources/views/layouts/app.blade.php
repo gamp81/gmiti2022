@@ -22,7 +22,7 @@
         <!-- <link rel="stylesheet" href="/css/plugins.css" />
         <link rel="stylesheet" href="/css/roboto-webfont.css" /> -->
         <!--Theme custom css -->
-        <link rel="stylesheet" href="/css/estilos.css">
+      {{--   <link rel="stylesheet" href="/css/estilos.css"> --}}
        <!--  <link rel="stylesheet" href="/css/style.css"> -->
         <!--Theme Responsive css-->
         <link href="{{ mix('css/app.css') }}" rel="stylesheet">

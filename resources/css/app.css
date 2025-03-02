@@ -3,7 +3,7 @@
 @import "tailwindcss/components";
 
 @import "tailwindcss/utilities";
-
+/* 
 .ckeditor-content h1,
 .ckeditor-content h2,
 .ckeditor-content h3,
@@ -12,14 +12,14 @@
 .ckeditor-content span,
 .ckeditor-content p span,
 .ckeditor-content ol {
-    all: unset; /* Restablece estilos heredados de app.css */
+    all: unset; 
 }
 
 .ckeditor-content {
     font-family: Arial, sans-serif;
     font-size: 14px;
     line-height: 1.6;
-}
+} */
 
 
 
@@ -174,18 +174,25 @@ header {
         display: flex;
     }
 }
+/* 
 .ckeditor-content h1,
 .ckeditor-content h2,
 .ckeditor-content h3,
 .ckeditor-content p,
 .ckeditor-content ul,
 .ckeditor-content ol {
-    all: unset; /* Restablece estilos heredados de app.css */
-}
+    all: unset; 
+} */
 
 .ckeditor-content {
     font-family: Arial, sans-serif;
     font-size: 14px;
+    line-height: 2;
+    text-align: justify;
+}
+.ckeditor-content h2 {
+    font-family: Arial, sans-serif;
+    font-size: 18 px;
     line-height: 2;
     text-align: justify;
 }
