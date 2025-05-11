@@ -5,7 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <!-- Favicon -->
         <link rel="icon" href="/images/logo2025-sf.ico" type="image/png">
-        {{-- <link rel="shortcut icon" href="images/gmiti.ico"> --}}
+       
         <title>GMITI Soluciones Informaticas</title>
         <meta name="language" content="spanish">
         <meta name="copyright" content="GMITI">
