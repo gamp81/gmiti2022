@@ -4,13 +4,14 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <!-- Favicon -->
-        <link rel="shortcut icon" href="images/gmiti.ico">
+        <link rel="icon" href="/images/logo2025-sf.ico" type="image/png">
+        {{-- <link rel="shortcut icon" href="images/gmiti.ico"> --}}
         <title>GMITI Soluciones Informaticas</title>
         <meta name="language" content="spanish">
         <meta name="copyright" content="GMITI">
         <meta name="author" content="Moncada G">
         <meta name="audience" content="all">
-        <meta name="description" content="Soluciones informaticas, sistema de facturacion , sistema de laboratorios clinicos">
+        <meta name="description" content="Blog Informatico, Soluciones informaticas, sistema de facturacion , sistema de laboratorios clinicos">
         <meta name="robots" content="index,all,follow">
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1 ">
         
@@ -50,14 +51,16 @@
            
            <div class="container mx-auto flex justify-between items-center px-6">
                <div>
-                   <a href="{{ url('/') }}" class="text-lg font-semibold text-gray-100 no-underline">
-                       <i class="fas fa-shield icon-lg" style=" font-size: 40px;" >
+                   <a href="{{ url('/') }}" class="flex items-center gap-2 text-lg font-semibold text-gray-100 no-underline">
+                        <img src="/images/logo2025-sf.png" alt="work" style="filter: invert(100%);"/>
+                        <i class="fas icon-lg" style=" font-size: 40px;" >
                         GMITI
-                    </i>
-                       Services
-                       {{-- {{ config('app.name', 'GMITI') }} Services --}}
-                   </a>
+                        </i>
+                        Services
+                    </a>
                </div>
+                 {{-- <div class="nav-links" style=" font-size: 40px;"><img src="/images/logo2025.png" class="w-full h-full object-cover" /> GMITI</div> Services    --}}
+                    
                <nav class="space-x-4 text-gray-300 text-lg text-2xl">
                <button class="menu-toggle" id="menu-toggle">&#9776;</button>
                 <ul class="nav-links" id="nav-links">
