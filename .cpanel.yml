@@ -12,9 +12,6 @@ deployment:
     - /opt/alt/php80/usr/bin/composer install --no-interaction --prefer-dist --optimize-autoloader --no-dev --no-scripts --working-dir=$DEPLOYPATH
     - /opt/alt/php80/usr/bin/php -r "file_exists('$DEPLOYPATH/.env') || copy('$DEPLOYPATH/.env.example', '$DEPLOYPATH/.env');"
     - /bin/grep -q '^APP_KEY=.\+' $DEPLOYPATH/.env || /opt/alt/php80/usr/bin/php $DEPLOYPATH/artisan key:generate --ansi
-
-
-
     # Creación archivo de variables de entorno en deploy inicial.
     # - /usr/local/bin/php -r "file_exists('.env') || copy('.env.example', '.env');"
     # - /usr/local/bin/php artisan key:generate --ansi
