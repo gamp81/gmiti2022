@@ -37,6 +37,9 @@ Route::get('/productos',function (){
 Route::get('/syslab',function (){
     return view('syslab.index');
 } );
+Route::get('/sysmed',function (){
+    return view('sysmed.index');
+} );
 
 Route::post('/mensaje', [App\Http\Controllers\PagesController::class, 'enviomail'])->name('mensaje');
 // Route::post('mensaje',function(){
